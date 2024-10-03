@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}accounts{% endblock title %}
+
+{% block bgcolor %}aqua{% endblock bgcolor %}
+{% block content %}
+<h1>index page</h1>
+
+{% for student in students %}
+<h2>{{ student.id }} </h2>
+<h2>{{ student.name }} </h2>
+<h2>{{ student.email }} </h2>
+<hr>
+{% endfor %}
+{% endblock content %}
+
+
+
